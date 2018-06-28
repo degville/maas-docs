@@ -74,8 +74,8 @@ Create an authorisation OAuth token and OAuth consumer.
 - `return`
    a json dict with four keys: 'token_key',
    'token_secret', 'consumer_key' and 'name'(e.g. {token_key:
-   's65244576fgqs', token_secret: 'qsdfdhv34', consumer_key: '68543fhj854fg', name:
-   'MAAS consumer'}).
+   's65244576fgqs', token_secret: 'qsdfdhv34',
+   consumer_key: '68543fhj854fg', name: 'MAAS consumer'}).
 
 - `rtype`
    string (json)
@@ -3701,7 +3701,8 @@ constraints are provided, they are combined using 'AND' semantics.
    -   vid:&lt;vid-integer&gt;:
 
    Match a subnet on a VLAN with the specified
-   VID. Valid values range from 0 through 4094 (inclusive).
+   VID. Valid values range from 0 through 4094 (inclusive). An untagged
+   VLAN can be specified by using the value "0".
 
    -   vlan:&lt;vlan-spec&gt;:
 
@@ -6504,7 +6505,7 @@ Ready.
 
 Manage a physical zone.
 
-Every node must belong to a physical zone, or "zone" for short. The meaning of a
+Any node is in a physical zone, or "zone" for short. The meaning of a
 physical zone is up to you: it could identify e.g. a server rack, a network,
 or a data centre. Users can then allocate nodes from specific physical
 zones, to suit their redundancy or performance requirements.
