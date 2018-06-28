@@ -6505,10 +6505,10 @@ Ready.
 
 Manage a physical zone.
 
-Any node is in a physical zone, or "zone" for short. The meaning of a
-physical zone is up to you: it could identify e.g. a server rack, a network,
-or a data centre. Users can then allocate nodes from specific physical
-zones, to suit their redundancy or performance requirements.
+Every node must belong to a physical zone, or "zone" for short. The meaning of
+a physical zone is up to you: it could identify e.g. a server rack, a network,
+or a data centre. Users can then allocate nodes from specific physical zones,
+to suit their redundancy or performance requirements.
 
 This functionality is only available to administrators. Other users can view
 physical zones, but not modify them.
